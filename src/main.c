@@ -6,7 +6,7 @@
 /*   By: aherrera <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/15 02:38:52 by aherrera          #+#    #+#             */
-/*   Updated: 2018/04/19 20:01:10 by aherrera         ###   ########.fr       */
+/*   Updated: 2018/04/20 13:20:30 by aherrera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ int			main(void)
 		{
 			piece = getmap(get_w(st), get_h(st));
 			p_piece(map, piece, pl);
-			piece = NULL;
 		}
 	}
 	return (0);

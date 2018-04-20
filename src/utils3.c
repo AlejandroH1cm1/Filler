@@ -6,7 +6,7 @@
 /*   By: aherrera <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/18 12:37:42 by aherrera          #+#    #+#             */
-/*   Updated: 2018/04/19 21:00:00 by aherrera         ###   ########.fr       */
+/*   Updated: 2018/04/20 13:01:58 by aherrera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int		clopp_back(char *map, int i, int len, char pl)
 
 	j = i;
 	dif = 100;
-	res = ft_strlen(map) * 3;
+	res = 1000000000;
 	while (j > len + 5)
 	{
 		if (map[j] == get_op(pl))
@@ -49,7 +49,7 @@ int		clopp_back(char *map, int i, int len, char pl)
 			return (res);
 		j--;
 	}
-	return (res);
+	return (1000000000);
 }
 
 int		clopp_forw(char *map, int i, int len, char pl)
