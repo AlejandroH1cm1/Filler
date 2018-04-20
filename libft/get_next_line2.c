@@ -6,7 +6,7 @@
 /*   By: aherrera <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/10 19:00:22 by aherrera          #+#    #+#             */
-/*   Updated: 2018/04/18 20:37:54 by aherrera         ###   ########.fr       */
+/*   Updated: 2018/04/20 13:25:16 by aherrera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ static char	*r_fi(int *fd, char **st)
 	ret = read(*fd, tmp, BUFF_SIZE);
 	if (ret < 0)
 	{
-		free(tmp);
 		return (NULL);
 	}
 	tmp[ret] = '\0';
@@ -36,7 +35,6 @@ static char	*r_fi(int *fd, char **st)
 		free(*st);
 	if (ret == 0)
 		*fd = -1;
-	free(tmp);
 	return (r);
 }
 
